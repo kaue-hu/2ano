@@ -16,11 +16,14 @@ namespace _67_saborrrr
             p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Quantidade no estoque: ");
             p.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("");
             Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine("");
 
             Console.Write("Digite o numero do produto a ser adicionado no estoqe");
             int qte = int.Parse(Console.ReadLine());
             p.AdicionarProdutos(qte);
+            Console.WriteLine("");
             Console.WriteLine("Dados Atualizados: " + p);
         }
     }
